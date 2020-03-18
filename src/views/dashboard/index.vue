@@ -1,6 +1,5 @@
 <template>
   <div class="dashboard-editor-container">
-
     <el-row :gutter="40" class="panel-group">
       <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col">
         <div class="card-panel">
@@ -8,8 +7,10 @@
             <svg-icon icon-class="peoples" class-name="card-panel-icon" />
           </div>
           <div class="card-panel-description">
-            <div class="card-panel-text">用户数量</div>
-            <count-to :start-val="0" :end-val="userTotal" :duration="2600" class="card-panel-num"/>
+            <div class="card-panel-text">
+              用户数量
+            </div>
+            <count-to :start-val="0" :end-val="userTotal" :duration="2600" class="card-panel-num" />
           </div>
         </div>
       </el-col>
@@ -19,8 +20,10 @@
             <svg-icon icon-class="message" class-name="card-panel-icon" />
           </div>
           <div class="card-panel-description">
-            <div class="card-panel-text">商品数量</div>
-            <count-to :start-val="0" :end-val="goodsTotal" :duration="3000" class="card-panel-num"/>
+            <div class="card-panel-text">
+              商品数量
+            </div>
+            <count-to :start-val="0" :end-val="goodsTotal" :duration="3000" class="card-panel-num" />
           </div>
         </div>
       </el-col>
@@ -30,8 +33,10 @@
             <svg-icon icon-class="message" class-name="card-panel-icon" />
           </div>
           <div class="card-panel-description">
-            <div class="card-panel-text">货品数量</div>
-            <count-to :start-val="0" :end-val="productTotal" :duration="3200" class="card-panel-num"/>
+            <div class="card-panel-text">
+              货品数量
+            </div>
+            <count-to :start-val="0" :end-val="productTotal" :duration="3200" class="card-panel-num" />
           </div>
         </div>
       </el-col>
@@ -41,8 +46,10 @@
             <svg-icon icon-class="money" class-name="card-panel-icon" />
           </div>
           <div class="card-panel-description">
-            <div class="card-panel-text">订单数量</div>
-            <count-to :start-val="0" :end-val="orderTotal" :duration="3600" class="card-panel-num"/>
+            <div class="card-panel-text">
+              订单数量
+            </div>
+            <count-to :start-val="0" :end-val="orderTotal" :duration="3600" class="card-panel-num" />
           </div>
         </div>
       </el-col>

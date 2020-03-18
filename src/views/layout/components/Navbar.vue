@@ -1,26 +1,24 @@
 <template>
   <div class="navbar">
-    <hamburger :toggle-click="toggleSideBar" :is-active="sidebar.opened" class="hamburger-container"/>
+    <hamburger :toggle-click="toggleSideBar" :is-active="sidebar.opened" class="hamburger-container" />
 
-    <breadcrumb class="breadcrumb-container"/>
+    <breadcrumb class="breadcrumb-container" />
 
     <div class="right-menu">
       <template v-if="device!=='mobile'">
-
         <el-tooltip content="全屏" effect="dark" placement="bottom">
-          <screenfull class="screenfull right-menu-item"/>
+          <screenfull class="screenfull right-menu-item" />
         </el-tooltip>
 
         <el-tooltip content="布局大小" effect="dark" placement="bottom">
-          <size-select class="international right-menu-item"/>
+          <size-select class="international right-menu-item" />
         </el-tooltip>
-
       </template>
 
       <el-dropdown class="avatar-container right-menu-item" trigger="click">
         <div class="avatar-wrapper">
           <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar">
-          <i class="el-icon-caret-bottom"/>
+          <i class="el-icon-caret-bottom" />
         </div>
         <el-dropdown-menu slot="dropdown">
           <router-link to="/">
